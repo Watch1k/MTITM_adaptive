@@ -363,6 +363,7 @@ svg { display: block; width: 100%; height: 100%; }
 .contacts { padding-bottom: 90px; font-family: "HelveticaNeueCyr-Roman", Arial, sans-serif; font-size: 18px; color: #1d1d1d; line-height: 24px; letter-spacing: 0.02em; }
 .contacts h2 { margin-top: 220px; font-size: 30px; line-height: 45px; }
 .contacts h2 + p { margin-top: 5px; font-family: "CenturyGothic", Arial, sans-serif; }
+@media only screen and (max-width: 450px) { .contacts h2 { font-size: 24px; line-height: 30px; } }
 
 .contacts-info { position: relative; margin-top: 150px; padding-bottom: 20px; border-bottom: 2px solid #4675b8; }
 @media only screen and (max-width: 719px) { .contacts-info { margin-left: 0; width: 100%; }
