@@ -78,8 +78,9 @@ svg { display: block; width: 100%; height: 100%; }
 
 @media only screen and (max-width: 800px) { .main-nav-wrap { position: relative; z-index: 1000; background-color: #fff; box-shadow: 0 0 4px rgba(0, 0, 0, 0.5); } }
 
-.main-nav-wrap.fixed { display: none; position: fixed; z-index: 1000; top: 0; left: 0; right: 0; background-color: #fff; border-bottom: 2px solid #8facd5; box-shadow: 0 0 5px rgba(70, 117, 184, 0.5); -webkit-transition: border 0.3s, box-shadow 0.3s; transition: border 0.3s, box-shadow 0.3s; }
+.main-nav-wrap.fixed { position: fixed; z-index: 1000; top: 0; left: 0; right: 0; background-color: #fff; border-bottom: 2px solid #8facd5; box-shadow: 0 0 5px rgba(70, 117, 184, 0.5); -webkit-transition: border 0.3s, box-shadow 0.3s; transition: border 0.3s, box-shadow 0.3s; }
 .main-nav-wrap.fixed .main-nav { margin-top: 0; }
+.main-nav-wrap.fixed #menu_toggle { margin-top: 7px; margin-bottom: 7px; }
 
 /* SVG lines */
 .header_line_left { position: absolute; top: 52px; left: 50%; margin-left: -485px; width: 485px; height: 125px; }
@@ -414,7 +415,7 @@ svg { display: block; width: 100%; height: 100%; }
 .contact-form button[type=submit]:active { width: 90%; -webkit-transition: width 0.1s; transition: width 0.1s; }
 .contact-form .form-error { font-size: 16px; line-height: 20px; }
 
-footer { margin-top: 16px; height: 32px; background-color: #4675b8; font-family: "HelveticaNeueCyr-Roman", Arial, sans-serif; font-size: 12px; color: #fff; line-height: 16px; letter-spacing: 0.02em; }
+footer { margin-top: 16px; height: 32px; background-color: #4675b8; font-family: "HelveticaNeueCyr-Roman", Arial, sans-serif; font-size: 12px; color: #fff; line-height: 24px; letter-spacing: 0.02em; }
 footer .svg-footer { position: relative; }
 footer .svg-footer .ft_line_left { position: absolute; top: -4px; left: 0; margin-left: -484px; width: 50%; height: 4px; }
 footer .svg-footer .ft_line_right { position: absolute; top: -4px; right: 0; width: calc(50% - 484px); height: 4px; }

@@ -1,10 +1,5 @@
 $(document).ready(function(){
 
-// fix adaptive
-	if ($(window).width() < 970) {
-		$('.favor_h_1, .services_h_2').remove();
-	};
-
 // menu toggle
 	$('#menu_toggle').on('click', function(){
 		$(this).toggleClass('is-active');

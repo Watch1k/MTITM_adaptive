@@ -33,6 +33,9 @@ $(document).ready(function() {
 			$(this).removeClass('svg-inview');
 		};
 	});
+	if ($(window).width() < 970) {
+		$('.favor_h_1, .services_h_2').remove();
+	};
 
 	$('.svg-inview').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
 		if (isInView) {
