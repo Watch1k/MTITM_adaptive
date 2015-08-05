@@ -3,7 +3,7 @@ $(document).ready(function(){
 // menu toggle
 	$('#menu_toggle').on('click', function(){
 		$(this).toggleClass('is-active');
-		$('.main-nav').slideToggle();
+		$('.main-nav').toggle();
 	});
 
 
@@ -204,7 +204,11 @@ $(document).ready(function(){
 			$('.pf-slide.slick-slide').find('svg').get(0).offsetHeight; // no need to store this anywhere, the reference is enough
 			$('.pf-slide.slick-slide').find('svg').show();
 		}, 410);
-		$(window).scrollTo('-=250px', 1000);
+		if ($(window).width() > 920) {
+			$(window).scrollTo('-=250px', 1000);
+		} else{
+			$(window).scrollTo('-=850px', 1000);
+		};
 		$('.btn-more').fadeIn();
 		if (eqRow < 3) {
 			$(this).fadeOut();

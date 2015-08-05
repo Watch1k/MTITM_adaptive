@@ -26,7 +26,7 @@ $blue: #4675b8
 /*----------------------------- MAIN STYLES -------------------------------*/
 /*-------------------------------------------------------------------------*/
 +r(969)
-	header, .intro, .about, .contacts
+	header, .intro, .about, .portfolio, .contacts
 		overflow: hidden
 body
 	min-width: 320px
@@ -120,6 +120,7 @@ svg
 		display: block
 		&.is-active
 			margin-top: 3px
+			margin-bottom: 0
 	span
 		display: block
 		position: absolute
@@ -185,14 +186,17 @@ svg
 					transition: all 0.3s
 	+r(800)
 		display: none
+		margin: 0 auto
+		padding-top: 30px
 		width: auto
 		&__left, &__right
+			width: 50%
 			li
 				display: block
 				width: auto
 				float: none
-		.main-nav__right
-			width: calc(50% - 101px)
+		&__right
+			margin-left: 0
 .main-nav-wrap
 	+r(800)
 		position: relative
@@ -214,6 +218,9 @@ svg
 	#menu_toggle
 		margin-top: 7px
 		margin-bottom: 7px
+		&.is-active
+			margin-top: 0
+			margin-bottom: 0
 /* SVG lines */
 .header_line_left
 	position: absolute
@@ -552,16 +559,16 @@ svg
 	letter-spacing: 0.02em
 	text-transform: uppercase
 	+r(920)
-		width: auto
+		width: 150px
 	.slick-list
 		margin-left: -1px
 		+r(920)
-			padding: 100px 0!important
+			padding: 112px 0!important
 			margin-left: 0
 	.slick-track
 		padding: 30px 0
 		+r(920)
-			top: -132px
+			top: -143px
 	.slick-prev, .slick-next
 		padding-left: 22px
 		margin-top: -20px
@@ -591,7 +598,7 @@ svg
 			margin-left: -22px
 			line-height: 40px
 		+r(920)
-			left: 0
+			left: -92px
 	.slick-next
 		right: -50px
 		&:before
@@ -602,7 +609,7 @@ svg
 			margin-left: -22px
 			line-height: 40px
 		+r(920)
-			right: 60px
+			right: -30px
 	.slick-slide
 		position: relative
 		text-align: center
@@ -641,7 +648,7 @@ svg
 			&__in
 				display: table-cell
 				height: 112px
-				width: 90px
+				width: 82px
 				vertical-align: middle
 				p:nth-child(2)
 					display: none
@@ -656,8 +663,7 @@ svg
 						margin-top: 35px
 		&.slick-center
 			+r(920)
-				margin-top: 25px
-				margin-bottom: 25px
+				z-index: 10
 	.pf-svg
 		svg
 			width: 100px
@@ -1373,6 +1379,9 @@ footer
 		h4
 			margin-top: 15px
 			margin-bottom: 10px
+	+r(479)
+		font-size: 14px
+		line-height: 17px
 a.try-btn
 	display: block
 	width: 100%
