@@ -27,26 +27,33 @@ $(document).ready(function() {
 		});
 	};
 
+	// fix adaptive
+	$('.svg-inview').each(function(){
+		if ($(this).css('display') == 'none') {
+			$(this).removeClass('svg-inview');
+		};
+	});
+
 	$('.svg-inview').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
 		if (isInView) {
 			if (visiblePartY == 'top') {
 				// top part of element is visible
 				_thisSVG = $(this);
-				if (!$(this).hasClass('is-visible') && $(this).css('display') != 'none') {
+				if (!$(this).hasClass('is-visible')) {
 					AnimateSVG();
 					$(_thisSVG).addClass('is-visible');
 				};
 			} else if (visiblePartY == 'bottom') {
 				// bottom part of element is visible
 				_thisSVG = $(this);
-				if (!$(this).hasClass('is-visible') && $(this).css('display') != 'none') {
+				if (!$(this).hasClass('is-visible')) {
 					AnimateSVG();
 					$(_thisSVG).addClass('is-visible');
 				};
 			} else {
 				// whole part of element is visible
 				_thisSVG = $(this);
-				if (!$(this).hasClass('is-visible') && $(this).css('display') != 'none') {
+				if (!$(this).hasClass('is-visible')) {
 					AnimateSVG();
 					$(_thisSVG).addClass('is-visible');
 				};
@@ -61,7 +68,7 @@ $(document).ready(function() {
 			if (visiblePartY == 'top') {
 				// top part of element is visible
 				_thisSVG = $(this);
-				if (!$(this).hasClass('is-visible') && $(this).css('display') != 'none') {
+				if (!$(this).hasClass('is-visible')) {
 					AnimateSVG();
 					$(_thisSVG).addClass('is-visible');
 					_thisSVG = $('.contacts_left_out_4');
@@ -72,7 +79,7 @@ $(document).ready(function() {
 			} else if (visiblePartY == 'bottom') {
 				// bottom part of element is visible
 				_thisSVG = $(this);
-				if (!$(this).hasClass('is-visible') && $(this).css('display') != 'none') {
+				if (!$(this).hasClass('is-visible')) {
 					AnimateSVG();
 					$(_thisSVG).addClass('is-visible');
 					_thisSVG = $('.contacts_left_out_4');
@@ -83,7 +90,7 @@ $(document).ready(function() {
 			} else {
 				// whole part of element is visible
 				_thisSVG = $(this);
-				if (!$(this).hasClass('is-visible') && $(this).css('display') != 'none') {
+				if (!$(this).hasClass('is-visible')) {
 					AnimateSVG();
 					$(_thisSVG).addClass('is-visible');
 					_thisSVG = $('.contacts_left_out_4');
