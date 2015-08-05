@@ -32,21 +32,21 @@ $(document).ready(function() {
 			if (visiblePartY == 'top') {
 				// top part of element is visible
 				_thisSVG = $(this);
-				if (!$(this).hasClass('is-visible')) {
+				if (!$(this).hasClass('is-visible') && $(this).css('display') != 'none') {
 					AnimateSVG();
 					$(_thisSVG).addClass('is-visible');
 				};
 			} else if (visiblePartY == 'bottom') {
 				// bottom part of element is visible
 				_thisSVG = $(this);
-				if (!$(this).hasClass('is-visible')) {
+				if (!$(this).hasClass('is-visible') && $(this).css('display') != 'none') {
 					AnimateSVG();
 					$(_thisSVG).addClass('is-visible');
 				};
 			} else {
 				// whole part of element is visible
 				_thisSVG = $(this);
-				if (!$(this).hasClass('is-visible')) {
+				if (!$(this).hasClass('is-visible') && $(this).css('display') != 'none') {
 					AnimateSVG();
 					$(_thisSVG).addClass('is-visible');
 				};
@@ -61,7 +61,7 @@ $(document).ready(function() {
 			if (visiblePartY == 'top') {
 				// top part of element is visible
 				_thisSVG = $(this);
-				if (!$(this).hasClass('is-visible')) {
+				if (!$(this).hasClass('is-visible') && $(this).css('display') != 'none') {
 					AnimateSVG();
 					$(_thisSVG).addClass('is-visible');
 					_thisSVG = $('.contacts_left_out_4');
@@ -72,7 +72,7 @@ $(document).ready(function() {
 			} else if (visiblePartY == 'bottom') {
 				// bottom part of element is visible
 				_thisSVG = $(this);
-				if (!$(this).hasClass('is-visible')) {
+				if (!$(this).hasClass('is-visible') && $(this).css('display') != 'none') {
 					AnimateSVG();
 					$(_thisSVG).addClass('is-visible');
 					_thisSVG = $('.contacts_left_out_4');
@@ -83,7 +83,7 @@ $(document).ready(function() {
 			} else {
 				// whole part of element is visible
 				_thisSVG = $(this);
-				if (!$(this).hasClass('is-visible')) {
+				if (!$(this).hasClass('is-visible') && $(this).css('display') != 'none') {
 					AnimateSVG();
 					$(_thisSVG).addClass('is-visible');
 					_thisSVG = $('.contacts_left_out_4');
