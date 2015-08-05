@@ -25,8 +25,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 /*------------------------------------------------------------------------- */
 /*----------------------------- MAIN STYLES ------------------------------- */
 /*------------------------------------------------------------------------- */
-header, .intro, .about { overflow: hidden; }
-
+@media only screen and (max-width: 969px) { header, .intro, .about, .contacts { overflow: hidden; } }
 body { min-width: 320px; }
 
 svg { display: block; width: 100%; height: 100%; }
@@ -265,8 +264,10 @@ svg { display: block; width: 100%; height: 100%; }
 .fancybox-wrap .fancybox-title { padding: 0 10px; font-family: "CenturyGothic", Arial, sans-serif; letter-spacing: 0.02em; font-size: 14px; background-color: rgba(0, 0, 0, 0.2); }
 
 .tgl_mid_1 { position: absolute; z-index: 7; top: -14px; left: 0; width: 150px; height: 100px; }
+@media only screen and (max-width: 969px) { .tgl_mid_1 { display: none; } }
 
 .tgl_mid_2 { position: absolute; z-index: 7; top: -100px; right: 0; width: 150px; height: 100px; }
+@media only screen and (max-width: 969px) { .tgl_mid_2 { display: none; } }
 
 .favor { position: relative; font-family: "HelveticaNeueCyr-Roman", Arial, sans-serif; font-size: 16px; color: #fff; line-height: 20px; letter-spacing: 0.02em; background-color: #181818; border-top: 14px solid #4675b8; }
 .favor h2 { font-family: "HelveticaNeueCyr-Roman", Arial, sans-serif; font-size: 30px; line-height: 66px; }
@@ -303,54 +304,78 @@ svg { display: block; width: 100%; height: 100%; }
 .favor-blog .favor-line_right { position: absolute; top: 0; left: 50%; width: 150px; height: 180px; }
 
 .tgl_mid_3 { position: absolute; top: -52px; left: 0; width: 150px; height: 100px; }
+@media only screen and (max-width: 969px) { .tgl_mid_3 { display: none; } }
 
 .tgl_mid_4 { position: absolute; top: -150px; right: 0; width: 150px; height: 100px; }
+@media only screen and (max-width: 969px) { .tgl_mid_4 { display: none; } }
 
-.services { position: relative; min-width: 970px; padding-top: 50px; padding-bottom: 90px; font-family: "HelveticaNeueCyr-Roman", Arial, sans-serif; font-size: 16px; color: #fff; line-height: 20px; letter-spacing: 0.02em; background-color: #4675b8; border-top: 2px solid #fff; }
+.services { position: relative; padding-top: 50px; padding-bottom: 90px; font-family: "HelveticaNeueCyr-Roman", Arial, sans-serif; font-size: 16px; color: #fff; line-height: 20px; letter-spacing: 0.02em; background-color: #4675b8; border-top: 2px solid #fff; }
 .services .svg-services { position: relative; }
 .services h2 { font-family: "HelveticaNeueCyr-Roman", Arial, sans-serif; font-size: 30px; line-height: 66px; }
+@media only screen and (max-width: 450px) { .services h2 { margin-top: 15px; } }
 .services__inner { position: relative; padding-top: 10px; padding-bottom: 10px; min-height: 80px; background-color: #181818; }
 .services__inner .tgl_top_1 { position: absolute; top: -1px; right: -1px; height: calc(50% + 2px); width: 40px; }
+@media only screen and (max-width: 450px) { .services__inner .tgl_top_1 { display: none; } }
 .services__inner .tgl_bot_1 { position: absolute; bottom: -1px; right: -1px; height: calc(50% + 2px); width: 40px; }
+@media only screen and (max-width: 450px) { .services__inner .tgl_bot_1 { display: none; } }
+@media only screen and (max-width: 450px) { .services__inner { width: 100%; margin: 0; } }
 .services__left, .services__right { display: table-cell; float: none; }
 .services__right { height: 100%; vertical-align: middle; }
 .services__right .btn-now { display: block; font-family: "CenturyGothic", Arial, sans-serif; font-size: 18px; line-height: 22px; -webkit-transition: color 0.3s; transition: color 0.3s; }
 .services__right .btn-now:hover, .services__right .btn-now:focus { text-decoration: none; color: #fff; -webkit-transition: color 0.3s; transition: color 0.3s; }
+@media only screen and (max-width: 620px) { .services .services__left, .services .services__right { display: block; }
+  .services .services__left { width: 90%; margin-bottom: 15px; } }
 
 .services_mid_1 { position: absolute; top: 0; left: calc(50% - 1px); width: 2px; height: 50px; }
 
 .services_mid_2 { position: absolute; bottom: 0; left: calc(50% - 1px); width: 2px; height: 90px; }
+@media only screen and (max-width: 450px) { .services_mid_2 { height: 60px; } }
 
 .services_left_1 { position: absolute; top: -50px; left: 160px; width: 2px; height: 160px; }
+@media only screen and (max-width: 969px) { .services_left_1 { display: none; } }
 
 .services-title { min-height: 40px; margin-top: 76px; margin-bottom: 15px; font-family: "CenturyGothic", Arial, sans-serif; font-size: 20px; line-height: 1em; }
 .services-title p { margin-left: 65px; }
+@media only screen and (max-width: 969px) { .services-title > div { width: 70%; } }
+@media only screen and (max-width: 700px) { .services-title { font-size: 16px; }
+  .services-title > div { width: 60%; } }
+@media only screen and (max-width: 450px) { .services-title > div { width: auto; }
+  .services-title > div p { margin-left: 10px; } }
 
 .services-hex_1 { position: absolute; top: -110px; left: -50px; width: 100px; height: 112px; }
+@media only screen and (max-width: 450px) { .services-hex_1 { display: none; } }
 
 .services_h_1 { position: absolute; top: -66px; left: 49px; right: 100px; height: 2px; }
+@media only screen and (max-width: 450px) { .services_h_1 { display: none; } }
 
 .services_h_2 { position: absolute; top: 50%; margin-top: -1px; left: 100%; height: 2px; width: 70px; }
+@media only screen and (max-width: 969px) { .services_h_2 { display: none; } }
 
 .services_v_1 { position: absolute; top: -65px; right: 100px; height: 65px; width: 2px; }
+@media only screen and (max-width: 450px) { .services_v_1 { display: none; } }
 
 .services_v_2 { position: absolute; top: 0; left: -1px; bottom: -22px; width: 2px; }
+@media only screen and (max-width: 450px) { .services_v_2 { display: none; } }
 
 .services_v_3 { position: absolute; top: 0; left: -1px; height: 100%; width: 2px; }
+@media only screen and (max-width: 450px) { .services_v_3 { display: none; } }
 
 .contacts { padding-bottom: 90px; font-family: "HelveticaNeueCyr-Roman", Arial, sans-serif; font-size: 18px; color: #1d1d1d; line-height: 24px; letter-spacing: 0.02em; }
 .contacts h2 { margin-top: 220px; font-size: 30px; line-height: 45px; }
 .contacts h2 + p { margin-top: 5px; font-family: "CenturyGothic", Arial, sans-serif; }
 
 .contacts-info { position: relative; margin-top: 150px; padding-bottom: 20px; border-bottom: 2px solid #4675b8; }
+@media only screen and (max-width: 719px) { .contacts-info { margin-left: 0; width: 100%; }
+  .contacts-info .col-xs-4 { margin-top: 20px; width: 100%; }
+  .contacts-info .col-xs-4 + .col-xs-4 { margin-top: 70px; } }
 
 .contacts-icon { display: block; margin: -50px auto 0; width: 50px; height: 50px; font-size: 30px; color: #4675b8; background-color: #FFF; text-align: center; }
 
-.contacts_line_left { position: absolute; top: 0; left: 0; width: 485px; height: 200px; }
+.contacts_line_left { position: absolute; top: 0; left: 50%; margin-left: -485px; width: 485px; height: 200px; }
 
-.contacts_line_right { position: absolute; top: 0; left: 485px; width: 485px; height: 200px; }
+.contacts_line_right { position: absolute; top: 0; left: 50%; width: 485px; height: 200px; }
 
-.contacts_line_mid { position: absolute; top: 0; left: 482px; width: 6px; height: 200px; }
+.contacts_line_mid { position: absolute; top: 0; left: 50%; margin-left: -3px; width: 6px; height: 200px; }
 
 .contacts_line_mid_2 { position: absolute; bottom: -100px; left: 50%; margin-left: -17px; width: 34px; height: 100px; }
 
@@ -360,11 +385,11 @@ svg { display: block; width: 100%; height: 100%; }
 
 .contacts_right_out { position: absolute; top: 3px; right: 0; width: calc(50% - 484px); height: 2px; }
 
-.contacts_line_left_4 { position: absolute; top: 320px; left: 0; width: 485px; height: 125px; }
+.contacts_line_left_4 { position: absolute; top: 320px; left: 50%; margin-left: -485px; width: 485px; height: 125px; }
 
-.contacts_line_mid_4 { position: absolute; top: 320px; left: 482px; width: 6px; height: 55px; }
+.contacts_line_mid_4 { position: absolute; top: 320px; left: 50%; margin-left: -3px; width: 6px; height: 55px; }
 
-.contacts_line_right_4 { position: absolute; top: 320px; left: 485px; width: 485px; height: 125px; }
+.contacts_line_right_4 { position: absolute; top: 320px; left: 50%; width: 485px; height: 125px; }
 
 .contacts_left_out_4 { position: absolute; top: 426px; left: 0; width: calc(50% - 484px); height: 17px; }
 

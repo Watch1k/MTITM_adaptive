@@ -47,7 +47,9 @@ $(document).ready(function(){
 	});
 
 // WOW animation
-	new WOW().init();
+	if ($(window).width() > 969) {
+		new WOW().init();
+	};
 
 // Slick slider
 	$('.pf-slider').slick({
